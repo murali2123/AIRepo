@@ -156,6 +156,19 @@
       <div class="retention"><span>Original photo retention</span><label><input type="radio" name="retention" checked /> Delete after video creation</label><label><input type="radio" name="retention" /> Keep for 24 hours for revisions</label></div>
       <button class="button button-primary full" value="default">Create private storyboard <span>→</span></button>
       <p id="formStatus" class="form-status" role="status"></p>
+      <section id="storyboardOutput" class="storyboard-output" hidden aria-live="polite">
+        <div class="storyboard-heading">
+          <div><p class="eyebrow"><span></span> Storyboard ready</p><h3 id="storyboardTitle">Your story</h3></div>
+          <button type="button" class="button button-ghost button-small" id="downloadScript">Download script</button>
+        </div>
+        <div id="kuralCard" class="kural-card" hidden>
+          <small id="kuralNumber"></small>
+          <blockquote id="kuralTamil"></blockquote>
+          <p id="kuralMeaning"></p>
+        </div>
+        <div id="sceneGrid" class="scene-grid"></div>
+        <div class="storyboard-note"><strong>Prototype result:</strong> assembled locally in your browser. The production version will send an adult-approved storyboard to the protected animation pipeline.</div>
+      </section>
     </form>
   </dialog>
 
